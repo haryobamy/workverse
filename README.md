@@ -1,4 +1,4 @@
-# Real-Time Collaborative To-Do List
+# Real-Time Collaborative To-Do List app
 
 ## Overview
 
