@@ -27,9 +27,11 @@ function TodoList() {
       <If condition={todos.length}>
         <Then>
           <div className="grid grid-cols-4 gap-2 mt-5 w-full">
-            {todos?.map((todo: Todo, idx: number) => (
-              <TodoItem key={idx} todo={todo} />
-            ))}
+            {todos
+              ?.slice(0, 3)
+              .map((todo: Todo, idx: number) => (
+                <TodoItem key={idx} todo={todo} />
+              ))}
           </div>
         </Then>
         <Else>
