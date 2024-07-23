@@ -1,9 +1,10 @@
 import { NextFunction, Request, Response } from 'express';
-import { CatchAsyncError } from '../../server/middleware/catchAsynError';
+
 import ErrorHandler from '../utils/ErrorHandler';
 
 import { createTodo, deleteTodo, updateTodo } from '../services/todo.service';
 import todoModel, { ITodo } from '../models/todo.model';
+import { CatchAsyncError } from '../middleware/catchAsynError';
 
 export const creatingTodo = CatchAsyncError(
   async (req: Request, res: Response, next: NextFunction) => {

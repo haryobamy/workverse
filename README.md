@@ -68,3 +68,11 @@ This is a simple real-time collaborative to-do list application built with Next.
 # or
 
 yarn dev
+
+6. **Run the server navigating into the backend folder:**
+
+   npm run dev
+
+# or
+
+yarn dev
